@@ -1,0 +1,137 @@
+2022-11-30 01:44:38.537 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7145/api/Auth/Refresh application/json 483
+2022-11-30 01:44:38.553 +01:00 [INF] Executing endpoint 'CarDealer.Controllers.AuthController.GetRefreshToken (CarDealer)'
+2022-11-30 01:44:38.589 +01:00 [INF] Route matched with {action = "GetRefreshToken", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRefreshToken(CarDealer.Models.Token) on controller CarDealer.Controllers.AuthController (CarDealer).
+2022-11-30 01:44:38.748 +01:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2022-11-30 01:44:38.749 +01:00 [INF] Executed action CarDealer.Controllers.AuthController.GetRefreshToken (CarDealer) in 159.3177ms
+2022-11-30 01:44:38.749 +01:00 [INF] Executed endpoint 'CarDealer.Controllers.AuthController.GetRefreshToken (CarDealer)'
+2022-11-30 01:44:38.749 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7145/api/Auth/Refresh application/json 483 - 401 - text/plain;+charset=utf-8 211.4819ms
+2022-11-30 01:44:59.750 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7145/api/Auth/Refresh application/json 485
+2022-11-30 01:44:59.752 +01:00 [INF] Executing endpoint 'CarDealer.Controllers.AuthController.GetRefreshToken (CarDealer)'
+2022-11-30 01:44:59.753 +01:00 [INF] Route matched with {action = "GetRefreshToken", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRefreshToken(CarDealer.Models.Token) on controller CarDealer.Controllers.AuthController (CarDealer).
+2022-11-30 01:44:59.810 +01:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2022-11-30 01:44:59.811 +01:00 [INF] Executed action CarDealer.Controllers.AuthController.GetRefreshToken (CarDealer) in 58.0195ms
+2022-11-30 01:44:59.811 +01:00 [INF] Executed endpoint 'CarDealer.Controllers.AuthController.GetRefreshToken (CarDealer)'
+2022-11-30 01:44:59.811 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7145/api/Auth/Refresh application/json 485 - 401 - text/plain;+charset=utf-8 61.2559ms
+2022-11-30 01:45:38.317 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7145/api/Auth/Refresh application/json 485
+2022-11-30 01:45:38.317 +01:00 [INF] Executing endpoint 'CarDealer.Controllers.AuthController.GetRefreshToken (CarDealer)'
+2022-11-30 01:45:38.317 +01:00 [INF] Route matched with {action = "GetRefreshToken", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRefreshToken(CarDealer.Models.Token) on controller CarDealer.Controllers.AuthController (CarDealer).
+2022-11-30 01:45:38.366 +01:00 [INF] Entity Framework Core 6.0.10 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.10' with options: None
+2022-11-30 01:45:38.370 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__token_RefreshToken_0='?' (Size = 44)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."FirstName", "u"."LastName", "u"."PasswordHash", "u"."PasswordSalt", "u"."RefreshToken", "u"."Role", "u"."TokenCreated", "u"."TokenExpires", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."RefreshToken" = @__token_RefreshToken_0
+LIMIT 1
+2022-11-30 01:45:38.370 +01:00 [INF] Executing OkObjectResult, writing value of type 'CarDealer.Models.Token'.
+2022-11-30 01:45:38.371 +01:00 [INF] Executed action CarDealer.Controllers.AuthController.GetRefreshToken (CarDealer) in 53.2908ms
+2022-11-30 01:45:38.371 +01:00 [INF] Executed endpoint 'CarDealer.Controllers.AuthController.GetRefreshToken (CarDealer)'
+2022-11-30 01:45:38.371 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7145/api/Auth/Refresh application/json 485 - 200 - application/json;+charset=utf-8 53.7288ms
+2022-11-30 01:49:58.372 +01:00 [INF] User profile is available. Using 'C:\Users\Work\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-30 01:49:58.788 +01:00 [INF] Now listening on: https://localhost:7145
+2022-11-30 01:49:58.789 +01:00 [INF] Now listening on: http://localhost:5145
+2022-11-30 01:49:58.791 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-30 01:49:58.791 +01:00 [INF] Hosting environment: Development
+2022-11-30 01:49:58.791 +01:00 [INF] Content root path: C:\Users\Work\source\repos\CarDealer\CarDealer\
+2022-11-30 01:49:59.669 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7145/swagger/index.html - -
+2022-11-30 01:50:00.058 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7145/swagger/index.html - - - 200 - text/html;charset=utf-8 394.3028ms
+2022-11-30 01:50:00.085 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7145/swagger/swagger-ui-bundle.js - -
+2022-11-30 01:50:00.085 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7145/swagger/swagger-ui-standalone-preset.js - -
+2022-11-30 01:50:00.085 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7145/_vs/browserLink - -
+2022-11-30 01:50:00.085 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7145/swagger/swagger-ui.css - -
+2022-11-30 01:50:00.085 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - -
+2022-11-30 01:50:00.108 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - - - 200 11988 application/javascript;+charset=utf-8 22.8807ms
+2022-11-30 01:50:00.113 +01:00 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2022-11-30 01:50:00.113 +01:00 [INF] The file /swagger-ui-bundle.js was not modified
+2022-11-30 01:50:00.113 +01:00 [INF] The file /swagger-ui.css was not modified
+2022-11-30 01:50:00.113 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7145/swagger/swagger-ui.css - - - 304 - text/css 28.3895ms
+2022-11-30 01:50:00.114 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7145/swagger/swagger-ui-bundle.js - - - 304 - application/javascript 28.6500ms
+2022-11-30 01:50:00.114 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7145/swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 28.7978ms
+2022-11-30 01:50:00.128 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7145/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.6028ms
+2022-11-30 01:50:00.301 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - -
+2022-11-30 01:50:00.459 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 158.3072ms
+2022-11-30 01:50:13.545 +01:00 [INF] User profile is available. Using 'C:\Users\Work\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-11-30 01:50:13.902 +01:00 [INF] Now listening on: https://localhost:7145
+2022-11-30 01:50:13.902 +01:00 [INF] Now listening on: http://localhost:5145
+2022-11-30 01:50:13.912 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-30 01:50:13.913 +01:00 [INF] Hosting environment: Development
+2022-11-30 01:50:13.918 +01:00 [INF] Content root path: C:\Users\Work\source\repos\CarDealer\CarDealer\
+2022-11-30 01:50:14.647 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7145/swagger/index.html - -
+2022-11-30 01:50:15.002 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7145/swagger/index.html - - - 200 - text/html;charset=utf-8 358.0001ms
+2022-11-30 01:50:15.042 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7145/_vs/browserLink - -
+2022-11-30 01:50:15.042 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - -
+2022-11-30 01:50:15.052 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7145/_framework/aspnetcore-browser-refresh.js - - - 200 11988 application/javascript;+charset=utf-8 9.4714ms
+2022-11-30 01:50:15.096 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7145/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 53.6611ms
+2022-11-30 01:50:15.269 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - -
+2022-11-30 01:50:15.461 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7145/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 192.2951ms
+2022-11-30 01:50:22.444 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7145/api/Auth/login application/json 50
+2022-11-30 01:50:22.550 +01:00 [INF] Executing endpoint 'CarDealer.Controllers.AuthController.Login (CarDealer)'
+2022-11-30 01:50:22.571 +01:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(CarDealer.Domain.Auth.LoginDto) on controller CarDealer.Controllers.AuthController (CarDealer).
+2022-11-30 01:50:23.483 +01:00 [INF] Entity Framework Core 6.0.10 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.10' with options: None
+2022-11-30 01:50:24.071 +01:00 [INF] Executed DbCommand (23ms) [Parameters=[@__req_Username_0='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."FirstName", "u"."LastName", "u"."PasswordHash", "u"."PasswordSalt", "u"."RefreshToken", "u"."Role", "u"."TokenCreated", "u"."TokenExpires", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."Username" = @__req_Username_0
+LIMIT 1
+2022-11-30 01:50:24.428 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 44)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Users" SET "RefreshToken" = @p0
+WHERE "Id" = @p1;
+SELECT changes();
+2022-11-30 01:50:24.457 +01:00 [INF] Executing OkObjectResult, writing value of type 'CarDealer.Models.Token'.
+2022-11-30 01:50:24.465 +01:00 [INF] Executed action CarDealer.Controllers.AuthController.Login (CarDealer) in 1889.1741ms
+2022-11-30 01:50:24.466 +01:00 [INF] Executed endpoint 'CarDealer.Controllers.AuthController.Login (CarDealer)'
+2022-11-30 01:50:24.475 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7145/api/Auth/login application/json 50 - 200 - application/json;+charset=utf-8 2030.5039ms
+2022-11-30 20:44:00.894 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7145/api/Car - -
+2022-11-30 20:44:00.923 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '31/10/2022 20:02:33', Current time: '30/11/2022 19:44:00'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2022-11-30 20:44:00.926 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '31/10/2022 20:02:33', Current time: '30/11/2022 19:44:00'.
+2022-11-30 20:44:00.928 +01:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|Admin)
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2022-11-30 20:44:00.944 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2022-11-30 20:44:00.945 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7145/api/Car - - - 401 0 - 50.5128ms
+2022-11-30 20:44:14.780 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7145/api/Auth/Refresh application/json 95
+2022-11-30 20:44:14.781 +01:00 [INF] Executing endpoint 'CarDealer.Controllers.AuthController.GetRefreshToken (CarDealer)'
+2022-11-30 20:44:14.782 +01:00 [INF] Route matched with {action = "GetRefreshToken", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRefreshToken(CarDealer.Models.Token) on controller CarDealer.Controllers.AuthController (CarDealer).
+2022-11-30 20:44:14.829 +01:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2022-11-30 20:44:14.829 +01:00 [INF] Executed action CarDealer.Controllers.AuthController.GetRefreshToken (CarDealer) in 46.9464ms
+2022-11-30 20:44:14.829 +01:00 [INF] Executed endpoint 'CarDealer.Controllers.AuthController.GetRefreshToken (CarDealer)'
+2022-11-30 20:44:14.829 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7145/api/Auth/Refresh application/json 95 - 401 - text/plain;+charset=utf-8 49.0927ms
+2022-11-30 20:44:29.978 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7145/api/Auth/Refresh application/json 487
+2022-11-30 20:44:29.978 +01:00 [INF] Executing endpoint 'CarDealer.Controllers.AuthController.GetRefreshToken (CarDealer)'
+2022-11-30 20:44:29.979 +01:00 [INF] Route matched with {action = "GetRefreshToken", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRefreshToken(CarDealer.Models.Token) on controller CarDealer.Controllers.AuthController (CarDealer).
+2022-11-30 20:44:30.037 +01:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2022-11-30 20:44:30.038 +01:00 [INF] Executed action CarDealer.Controllers.AuthController.GetRefreshToken (CarDealer) in 59.1046ms
+2022-11-30 20:44:30.038 +01:00 [INF] Executed endpoint 'CarDealer.Controllers.AuthController.GetRefreshToken (CarDealer)'
+2022-11-30 20:44:30.038 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7145/api/Auth/Refresh application/json 487 - 401 - text/plain;+charset=utf-8 60.1985ms
+2022-11-30 20:44:44.767 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7145/api/Auth/Refresh application/json 487
+2022-11-30 20:44:44.767 +01:00 [INF] Executing endpoint 'CarDealer.Controllers.AuthController.GetRefreshToken (CarDealer)'
+2022-11-30 20:44:44.767 +01:00 [INF] Route matched with {action = "GetRefreshToken", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetRefreshToken(CarDealer.Models.Token) on controller CarDealer.Controllers.AuthController (CarDealer).
+2022-11-30 20:44:44.769 +01:00 [INF] Entity Framework Core 6.0.10 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.10' with options: None
+2022-11-30 20:44:44.775 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__token_RefreshToken_0='?' (Size = 44)], CommandType='"Text"', CommandTimeout='30']
+SELECT "u"."Id", "u"."Email", "u"."FirstName", "u"."LastName", "u"."PasswordHash", "u"."PasswordSalt", "u"."RefreshToken", "u"."Role", "u"."TokenCreated", "u"."TokenExpires", "u"."Username"
+FROM "Users" AS "u"
+WHERE "u"."RefreshToken" = @__token_RefreshToken_0
+LIMIT 1
+2022-11-30 20:44:44.776 +01:00 [INF] Executing OkObjectResult, writing value of type 'CarDealer.Models.Token'.
+2022-11-30 20:44:44.776 +01:00 [INF] Executed action CarDealer.Controllers.AuthController.GetRefreshToken (CarDealer) in 8.6921ms
+2022-11-30 20:44:44.776 +01:00 [INF] Executed endpoint 'CarDealer.Controllers.AuthController.GetRefreshToken (CarDealer)'
+2022-11-30 20:44:44.776 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7145/api/Auth/Refresh application/json 487 - 200 - application/json;+charset=utf-8 9.7275ms
+2022-11-30 20:45:12.604 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7145/api/Car - -
+2022-11-30 20:45:12.611 +01:00 [INF] Executing endpoint 'CarDealer.Controllers.CarController.GetAll (CarDealer)'
+2022-11-30 20:45:12.613 +01:00 [INF] Route matched with {action = "GetAll", controller = "Car"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller CarDealer.Controllers.CarController (CarDealer).
+2022-11-30 20:45:12.616 +01:00 [INF] Entity Framework Core 6.0.10 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.10' with options: None
+2022-11-30 20:45:12.617 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."CarManufacturerId", "c"."CarType", "c"."Hp", "c"."Make", "c"."Model", "c"."Seats", "c"."Year"
+FROM "Cars" AS "c"
+2022-11-30 20:45:12.617 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarDealer.Domain.GetCarDto, CarDealer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-30 20:45:12.617 +01:00 [INF] Executed action CarDealer.Controllers.CarController.GetAll (CarDealer) in 3.911ms
+2022-11-30 20:45:12.617 +01:00 [INF] Executed endpoint 'CarDealer.Controllers.CarController.GetAll (CarDealer)'
+2022-11-30 20:45:12.617 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7145/api/Car - - - 200 - application/json;+charset=utf-8 12.8104ms
+2022-11-30 21:57:36.984 +01:00 [INF] Entity Framework Core 6.0.10 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
+2022-11-30 21:57:49.555 +01:00 [INF] Entity Framework Core 6.0.10 initialized 'DataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.10' with options: None
