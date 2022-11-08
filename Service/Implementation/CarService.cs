@@ -43,11 +43,6 @@ namespace CarDealer.Service.Implementation
             {
                 throw new CarException(car.Make, 404, $"Car manufacturer {car.Make} does not exist");
             }
-            //if(_db.CarManufacturers.Any(x => x.Id != id))
-            //{
-            //    throw new CarException(404, id, $"Car manufacturer with Id : {id} does not exist");
-            //}
-            //newCar.CarManufacturerId = id;
             newCar.CarManufacturerId = carMake.Id;
             _carRepository.Add(newCar);
             return _carRepository.GetAll().
