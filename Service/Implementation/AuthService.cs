@@ -61,11 +61,5 @@ namespace CarDealer.Service.Implementation
             _db.SaveChanges();
             return newToken;
         }
-
-        //public string GetRole(string name)
-        //{
-        //    var user = _db.Users.FirstOrDefault(x => x.Username.ToLower() == name.ToLower());
-        //    return user.Role;
-        //}
     }
 }

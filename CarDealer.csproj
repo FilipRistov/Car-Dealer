@@ -42,7 +42,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="logs\" />
     <Folder Include="Mapper\" />
   </ItemGroup>
 

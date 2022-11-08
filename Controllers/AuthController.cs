@@ -54,11 +54,6 @@ namespace CarDealer.Controllers
                 return BadRequest("Error");
             }
         }
-        //[HttpGet]
-        //public IActionResult GetRole(string name)
-        //{
-        //    return Ok(_authService.GetRole(name));
-        //}
         [HttpPost("Refresh")]
         public IActionResult GetRefreshToken(string token)
         {

@@ -7,7 +7,6 @@ namespace CarDealer.Service.Abstraction
     {
         UserDto Register(RegisterDto req);
         Token Login(LoginDto req);
-        //string GetRole(string name);
         Token GetRefreshToken(string token);
     }
 }
