@@ -27,7 +27,6 @@ namespace CarDealer.Service.Implementation
             }
             Token token = _jwt.CreateToken(user);
             user.RefreshToken = token.RefreshToken;
-            //_db.Update(user);
             _db.SaveChanges();
             return token;
         }
