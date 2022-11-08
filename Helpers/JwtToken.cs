@@ -16,28 +16,6 @@ namespace CarDealer.Helpers
             _configuration = configuration;
         }
 
-        public ClaimsPrincipal GetPrincipal(string token)
-        {
-            //var TokenValidationParameters = new TokenValidationParameters
-            //{
-            //    ValidateIssuerSigningKey = true,
-            //    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(
-            //    _configuration.GetSection("AppSettings:Token").Value)),
-            //    ValidateIssuer = false,
-            //    ValidateAudience = false,
-            //    ValidateLifetime = false,
-            //    ClockSkew = TimeSpan.Zero
-            //};
-            //var tokenHandler = new JwtSecurityTokenHandler();
-            //var principal = tokenHandler.ValidateToken(token, TokenValidationParameters, out SecurityToken securityToken);
-            //JwtSecurityToken jwtSecurityToken = securityToken as JwtSecurityToken;
-            //if (jwtSecurityToken == null || !jwtSecurityToken.Header.Alg.Equals(SecurityAlgorithms.HmacSha512, StringComparison.InvariantCultureIgnoreCase))
-            //{
-            //    throw new SecurityTokenException("Invalid Token");
-            //}
-            //return principal;
-            throw new Exception();
-        }
         public Token CreateToken(User user)
         {
             List<Claim> claims = new List<Claim>
